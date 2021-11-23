@@ -216,9 +216,6 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  header {
-    margin-bottom: 40%;
-  }
   .gauche {
     max-width: 500px;
     margin-left: auto;
@@ -253,6 +250,7 @@ footer {
   }
 
   .desc {
+    margin-top: 40%;
     flex-direction: column;
   }
   .desc > img {
@@ -267,6 +265,16 @@ footer {
     font-size: 16px;
     line-height: 25px;
   }
+  .signup3 {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .signup3 > a {
+    width: 250px;
+  }
+  .signup3 > a > span {
+    font-size: 15px;
+  }
   .appareil > h2 {
     font-size: 25px;
   }
@@ -275,7 +283,7 @@ footer {
     justify-content: center;
   }
   .eachAppareil {
-    flex-basis: 40%;
+    flex-basis: 50%;
     flex-grow: ;
   }
   .footer {
@@ -291,10 +299,7 @@ footer {
     width: 100px;
   }
   .gauche {
-    max-width: 100%;
-  }
-  .btn {
-    padding: 10px 20px;
+    max-width: 500px;
   }
   nav > .btn {
     font-size: 12px;
