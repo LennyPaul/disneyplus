@@ -103,9 +103,14 @@ h3 {
   display: grid;
   background-size: cover;
   align-items: center;
+  height: 100vh;
+}
+.grid > picture {
+  height: 100vh;
+  object-fit: cover;
 }
 .gauche,
-.grid > img {
+.grid > picture {
   grid-area: 1/1/2/2;
 }
 .desc {
@@ -144,7 +149,6 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-
   padding: 5%;
 }
 .signup3 > a {
@@ -152,6 +156,7 @@ h2 {
   height: 60px;
   padding: 20px 24px;
   text-align: center;
+  margin: 0;
 }
 
 .signup3 > a > span {
@@ -180,7 +185,7 @@ li {
 }
 footer {
   text-align: center;
-  padding: 7%;
+  padding: 7% 0;
   padding-bottom: 3%;
 }
 .footer {
@@ -212,21 +217,25 @@ footer {
 
 @media screen and (max-width: 768px) {
   header {
-    justify-content: center;
+    margin-bottom: 40%;
   }
-
   .gauche {
-    margin-top: 30%;
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50%;
   }
   .gauche > h1 {
     font-size: 20px;
     font-weight: normal;
+    text-align: center;
   }
   .gauche > img {
     margin-left: auto;
     margin-right: auto;
+  }
+  .grid > picture {
+    margin-top: -50%;
   }
   .eachPrix {
     display: block;
@@ -257,5 +266,40 @@ footer {
   .descDroite > ul > li {
     font-size: 16px;
     line-height: 25px;
+  }
+  .appareil > h2 {
+    font-size: 25px;
+  }
+  .detail {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .eachAppareil {
+    flex-basis: 40%;
+    flex-grow: ;
+  }
+  .footer {
+    padding: 0 5%;
+  }
+  .footer > .logo {
+    width: 15%;
+  }
+}
+@media screen and (max-width: 500px) {
+  nav > .logo {
+    margin: 0;
+    width: 100px;
+  }
+  .gauche {
+    max-width: 100%;
+  }
+  .btn {
+    padding: 10px 20px;
+  }
+  nav > .btn {
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: 1%;
+    padding: 5px 10px;
   }
 }
